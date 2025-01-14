@@ -1,0 +1,52 @@
+body {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container {
+    width: 300px;
+    height: 500px;
+    margin: 110px auto;
+    /* background: linear-gradient(to bottom, #1e90ff, #00bfff); */
+    background: linear-gradient(to bottom, rgba(46, 80, 119, 0.3), rgba(66, 55, 255, 0.5));
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 2px solid skyblue;
+}
+
+.register h1 {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.gmail label, .username label, .password label, .confirm-password label{
+    padding: 30px;
+    color: white;
+    font-size: 13px;
+}
+.gmail input, .username input, .password input, .confirm-password input {
+    width: 220px;
+    height: 15px;
+    margin: 5px 0px 20px 30px;
+}
+
+
+.tombol {
+    text-align: center;
+    margin-top: 20px;
+}
+.tombol input {
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: skyblue;
+    font-size: medium;
+}
+
+footer {
+    text-align: center;
+    margin-top: 70px;
+    color: white;
+    font-size: 13px;
+}

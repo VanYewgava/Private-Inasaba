@@ -1,0 +1,23 @@
+.nol {
+    width: 600px;
+    background-color: red;
+    margin: 10px auto;
+    border: 4px dashed white;
+}
+
+.satu {
+    box-sizing: border-box; /*supaya tanpa menghitung pengurangan widht dan padding, margin*/
+    width: 600px;
+    background-color: orange;
+    padding: 10px;
+    margin: 10px auto;
+    border: 5px solid red;
+}
+
+.dua {
+    background-color: blueviolet;
+    padding: 20px;
+    width: 540px;
+    margin: 10px auto;
+    border: 10px dotted yellow;
+}

@@ -1,0 +1,48 @@
+.container{
+    margin: 30px auto;
+    
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.judul {
+    font-size: 10px;
+}
+
+.navigasi {
+    display: inline-block;
+    
+}
+.navigasi a{
+    padding: 20px;
+    text-decoration: solid;
+    color: black;
+}
+.navigasi a:hover {
+    color: yellow;
+}
+
+.gambar {
+   
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url(banner.jpg);
+    width: 100%;
+    height: 500px;
+}
+.artikel {
+    margin: 20px;
+}
+.artikel p{
+    text-indent: 30px;
+    text-align: justify;
+}
+
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}

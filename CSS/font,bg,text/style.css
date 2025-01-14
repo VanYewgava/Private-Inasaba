@@ -1,0 +1,25 @@
+/*Untuk mengatur font*/
+body {
+    background-color: #fff;
+    background-image: url(tree.png);
+    background-repeat: no-repeat;
+    background-position: 15%;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    font-variant: small-caps;
+    font-style: italic;
+    color: #3E7B27;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    color: #fff;
+    
+}

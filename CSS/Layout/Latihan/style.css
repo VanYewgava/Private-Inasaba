@@ -1,0 +1,59 @@
+body{
+    background-image: url(wallpaper.jpg);
+    background-position: center;
+    
+    
+}
+.container {
+    width: 800px;
+    margin: 30px auto;
+    color: white;
+    background-color: rgba(84, 134, 180, 0.5);
+    padding-left: 3px;
+    padding-bottom: 5px;
+}
+.container p{
+    color: white;
+    text-shadow: 40px;
+}
+.navigasi a{
+    display: inline-block;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+    text-decoration: solid;
+    border: 3px solid ;
+}
+.navigasi a:link {
+    color: white;
+}
+.navigasi a:hover {
+    color: green;
+}
+.logo {
+    text-align: center;
+}
+.judul {
+    text-align: left;
+    font-size: x-large
+}
+.pencipta {
+    font-size: small;
+}
+.pencipta a {
+    text-decoration: solid;
+    color: green;
+}
+
+.isian {
+    text-indent: 30px;
+    text-align: justify;
+    
+}
+
+footer {
+    text-align: center;
+}
+footer a {
+    text-decoration: solid;
+    color: green;
+}

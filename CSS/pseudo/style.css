@@ -1,0 +1,32 @@
+a:hover {
+    color: rgb(0, 255, 242);
+    width: 100px;
+}
+
+ul li a:active {
+    color: green;
+}
+
+/* ul li a:visited {
+    color: rgb(0, 0, 0);
+} */
+
+/* ul li:first-child a{
+    color: rgb(158, 255, 2);
+}
+
+ul li:last-child a{
+    color: silver;
+} */
+
+ul li:nth-child(odd) a{
+    color: red;
+}
+
+p:first-of-type {
+    color: yellow;
+}
+
+p:last-of-type {
+    color: lightcoral;
+}
