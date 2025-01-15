@@ -1,0 +1,114 @@
+body {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-judul {
+  display: flex;
+}
+
+.logo {
+  border: 1px solid;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  width: 40px;
+  background-image: url(Revou-alasan.original.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.judul {
+  margin: -9px 4px 0px 5px;
+  color: white;
+}
+
+.navigasi {
+  margin: -9px -35px 0px 30px;
+}
+
+.navigasi a {
+  margin: auto 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.navigasi a:hover {
+  text-decoration: underline;
+}
+
+.tombol {
+  display: flex;
+  margin: 60px 0px 3px 15px;
+}
+.tambah-data input {
+  border: none;
+  border-radius: 3px;
+  background-color: green;
+  color: white;
+  height: 25px;
+}
+
+.kembali {
+  margin-left: 10px;
+}
+.kembali input {
+  border: none;
+  border-radius: 3px;
+  background-color: brown;
+  color: white;
+  height: 25px;
+}
+
+.tabel table td {
+  border: 1px solid;
+  width: 30px;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tabel table {
+  margin: 30px 5px 20px 15px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tombol-edit {
+  background-color: yellow;
+  border: none;
+  border-radius: 3px;
+}
+
+.tombol-hapus {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.tambah-data input:hover,
+.kembali input:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  height: 40px;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
