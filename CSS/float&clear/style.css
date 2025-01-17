@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, rgb(223, 32, 32), rgb(24, 22, 22));
+}
+.container {
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  border: 0px solid;
+  margin: 180px auto;
+  display: flex;
+}
+
+.bagian-kiri {
+  width: 300px;
+  text-align: center;
+  background: linear-gradient(to bottom, rgb(24, 22, 22), rgb(223, 32, 32));
+}
+
+.bagian-kiri img {
+  width: 150px;
+  margin: 138px auto;
+}
+
+.bagian-kanan {
+  width: 300px;
+  border: 1px solid red;
+  background: white;
+}
+.logo-marvel {
+  text-align: center;
+}
+.logo-marvel img {
+  width: 150px;
+}
+.formulir {
+  margin: 4px 15px;
+}
+
+.formulir label {
+  margin: 5px;
+  font-size: 14px;
+}
+.formulir input {
+  width: 259px;
+  height: 20px;
+  border: 1px solid red;
+  border-radius: 5px;
+  outline: none;
+}
+
+.username {
+  margin-top: 20px;
+}
+.password {
+  margin-top: 30px;
+}
+.tombol {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.tombol input {
+  width: 100px;
+  height: 25px;
+  border: 1px solid red;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.tombol input:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.ingat-saya {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  font-size: 13px;
+}
+
+.belum-punya-akun {
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  margin-top: -15px;
+}
+
+.belum-punya-akun a {
+  margin-top: 9px;
+  margin-left: 4px;
+  text-decoration: none;
+  color: black;
+}
+
+.belum-punya-akun a:hover {
+  text-decoration: underline;
+}
