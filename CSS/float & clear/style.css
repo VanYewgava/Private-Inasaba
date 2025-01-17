@@ -1,0 +1,9 @@
+.container {
+    width: 360px;
+    border: 2px solid;
+    margin: 180px auto;
+}
+
+.bagian-kiri {
+    background-image: url(./logo-marvel.png);
+}
