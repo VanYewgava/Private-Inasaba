@@ -1,0 +1,87 @@
+body {
+    background-image: url(jd-weiher-r_I6Y3eFrXE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 400px;
+    height: 480px;
+    margin: 60px auto;
+    justify-content: center;
+    border: 2px solid;
+    background-color: rgba(0, 0, 0, .6);
+    
+}
+
+.logo-ikon {
+    text-align: center;
+}
+.logo-ikon img {
+    width: 100px;
+}
+.judul {
+    text-align: center;
+    color: orange;
+}
+form {
+    margin: 30px;
+    color: white;
+}
+
+.isian-form label {
+    margin-left: 5px;
+}
+.isian-form input {
+    width: 320px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.password {
+    margin-top: 20px;
+}
+
+.tombol {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.tombol input{
+    width: 70px;
+    height: 25px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: orange;
+    font-size: 17px;
+}
+.ingat-saya {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.ingat-saya input {
+    outline: none;
+}
+
+.belum-punya-akun {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    color: white;
+}
+
+.belum-punya-akun a{
+    margin-top: 16px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: orange;
+}
+.belum-punya-akun a:hover {
+    text-decoration: underline;
+}
