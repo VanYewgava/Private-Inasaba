@@ -1,0 +1,14 @@
+.container {
+        width: 400px;
+        height: 480px;
+        margin: 60px auto;
+        justify-content: center;
+        border: 2px solid;
+}
+
+.formulir {
+    margin: 50px;
+    
+}
+
+.username 
