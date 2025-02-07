@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ari's Cat Food</title>
+    <link rel="stylesheet" href="makan.css">
+</head>
+<body>
+    <h1>Selamat Datang di Ari's Cat Food</h1>
+    <form action="" method="post">
+        <label for="catFood">Pilih merk Cat Food Anda : </label>
+        <select name="catFood" id="">
+            <option value="">-- pilih --</option>
+            <?php foreach($produk as $key => $catFood):?>
+                <option value="<?= $key ?>"
+                <?php if(isset($_SESSION["catFood"]) && $_SESSION["catFood"] == $key){
+                    echo "selected";
+                } ?>
+                ><?= $key ?>
+            </option>
+            <?php endforeach; ?>
+        </select>
+        <button type="submit">Tampilkan</button>
+        <button type="submit" name="refresh">Muat Ulang!</button>
+        <button type="submit" name="logout">Log Out</button>
+    </form>
+
+    <?php if(!empty($pilih)): ?>
+        <table border="1" cellspacing="0" cellpadding="1">
+            <tr>
+                <th>No.</th>
+                <th>Keterangan</th>
+                <th>Detail</th>
+            </tr>
+            <?php $no = 1;?>
+            <?php foreach($pilih as $keterangan => $detail):?>
+                <tr>
+                    <td><?= $no ?></td>
+                    <td><?= $keterangan ?></td>
+                    <td><?= $detail ?></td>
+                    <?php $no++ ?>
+                </tr>
+                <?php endforeach; ?>
+        </table>
+        <?php else :?>
+            <p>Tidak ada merk yang dipilih</p>
+        <?php endif ?>
+        
+</body>
+</html>
