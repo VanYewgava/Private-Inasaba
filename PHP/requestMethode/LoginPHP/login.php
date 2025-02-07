@@ -1,9 +1,9 @@
 <?php
-echo "<link rel='stylesheet' type='text/css' href='login.css'>";
+
 session_start();
 
 if(isset($_SESSION["username"])){
-    header("Location: login2.php");
+    header("Location: makanankucing.php");
     exit();
 }
 
@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     
     if($username === $valid_username && $password === $valid_password){
         $_SESSION["username"] = $username;
-        header ("Location: login2.php");
+        header ("Location: makanankucing.php");
         exit();
     }else {
         $error = "Username dan Password salah";
@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="container">
