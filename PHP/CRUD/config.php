@@ -33,4 +33,34 @@ function Delete($delete){
 
     return mysqli_affected_rows($config);
 }
+
+function Update($update){
+    global $config;
+    $id = htmlspecialchars($update["id"]);
+    $nis = htmlspecialchars ($update["nis"]);
+    $nama = htmlspecialchars($update["nama"]);
+    $jurusan = htmlspecialchars($update["jurusan"]);
+    $alamat = htmlspecialchars($update["alamat"]);
+
+    $query = "UPDATE siswa SET 
+                id = '$id',
+                nis = '$nis',
+                nama = '$nama',
+                jurusan = '$jurusan',
+                alamat = '$alamat'
+                WHERE id = $id";
+
+    mysqli_query($config, $query);
+    return mysqli_affected_rows($config);
+}
+
+function Search ($search){
+    $query = "SELECT * FROM siswa
+                WHERE
+                nis LIKE '%$search%' OR
+                nama LIKE '%$search%' OR
+                jurusan LIKE '%$search%' OR
+                alamat LIKE '%$search%'";
+    return query($query);
+}
 ?>
