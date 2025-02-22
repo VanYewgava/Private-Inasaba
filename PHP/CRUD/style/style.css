@@ -1,0 +1,134 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.btn, .btn-edit, .btn-delete {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Primary Button */
+.btn {
+    background: #ff9800;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+/* Edit Button */
+.btn-edit {
+    background: #4caf50;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #388e3c;
+    transform: scale(1.05);
+}
+
+/* Delete Button */
+.btn-delete {
+    background: #f44336;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Table Container */
+.table-container {
+    overflow-x: auto;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Table Header */
+th {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+/* Table Data */
+td {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+/* Row Hover Effect */
+tr:hover td {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+    
+    .container {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .btn {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
