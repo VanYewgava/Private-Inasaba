@@ -63,4 +63,28 @@ function Search ($search){
                 alamat LIKE '%$search%'";
     return query($query);
 }
+
+function Register($register){
+    global $config;
+
+    $username = strtolower(stripslashes($register["username"]));
+    $password1 = mysqli_real_escape_string($config, $register["password1"]);
+    $password2 = mysqli_real_escape_string($config, $register["password2"]);
+
+    //cek password sama atau tidak
+    if ($password1 !== $password2){
+        echo "<script>
+                alert('password tidak sama')
+                </script>";
+                return false;
+    }
+    
+    //enkripsi password
+    //timpa password
+    $password1 = password_hash($password1, PASSWORD_DEFAULT);
+
+    mysqli_query($config, "INSERT INTO user VALUE
+                (NULL,'$user','$password1')");
+    return mysqli_affected_rows($config);
+}
 ?>
